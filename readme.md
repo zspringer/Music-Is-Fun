@@ -58,9 +58,9 @@ Requirements:
 
 ### BONUS - Preview the Songs `Total Points: 5`
 Requirements: 
-- Clicking on the title should play the 30 second preview
-- The preview must play without opening a new browser window
-- Clicking play on a title while another song is already playing will stop the previous song and start the new one
+- Clicking on the title should play the 30 second preview (2)
+- The preview must play without opening a new browser window (1)
+- Clicking play on a title while another song is already playing will stop the previous song and start the new one (3)
 
 ### Finished?
 When You are finished please slack the url for your github repo to your mentor with in a DM. You are free to work on this however you like but ultimately it needs to be added to your github.
