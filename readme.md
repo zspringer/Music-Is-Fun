@@ -8,9 +8,9 @@ You will notice a file named `itunes-service.js` This file has been setup to get
 
 You are now being tasked with handling the data that comes back from the service after clicking the `Get Music` Button. 
 
-The first thing to focus on will be adding the correct information to the screen. You will be doing this through the `drawSongs` function that has already been setup in app.js
+The first thing to focus on will be adding the correct information to the screen. You will be doing this through a `drawSongs` function that will need to be setup in itunes-controller.js
 
-> Notice that `drawSongs` is accepting an argument called `(songList)`
+> Your `drawSongs` function will need to accept a parameter of songs maybe call it called `(songList)`
 
 > The `songList` is an `array` of `objects` where each `object` is a song as illustrated below
 
