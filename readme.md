@@ -24,7 +24,7 @@ songList = [{
   preview: 'string - url will play the song'
 }]
 ```
-When the user clicks the `Get Music Button` it runs a function in the `itunes-service.js` once that code is finished it will call the `drawSongs function` and pass in the list of songs requested. Thus you will not need to modify any of the code in the `itunes-service.js` or the `getMusic function` Also do not change the name of the `drawSongs function`.
+When the user clicks the `Get Music Button` it runs a function in the `itunes-service.js` once that code is finished it will call a `drawSongs function` and pass in the list of songs requested. Thus you will not need to modify any of the code in the `itunes-service.js` or the `getMusic function` you will however need to create `drawSongs function` and pass it as a callback into the `.then()` statement available in the controller.
 
 ### Step 1 -  Where is the output? `Total Points: 10`
 
