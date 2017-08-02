@@ -4,10 +4,37 @@ function ItunesController(){
   this.getMusic = function getMusic(e){
     e.preventDefault();
     var artist = e.target.artist.value;
-    itunesService.getMusicByArtist(artist).then(); //after get music by artist returns what are you doing with the objects?
+    itunesService.getMusicByArtist(artist).then(drawSongs); //after get music by artist returns what are you doing with the objects?
+  }
+//need a draw, media tags for playbar, style for image, price artist
+  //Start coding here
+
+  function drawSongs(songsList){
+    var template = ''
+    var songElem = document.getElementById('song-list')
+
+    for (var i = 0; i < songsList.length; i++) {
+      var song = songsList[i];
+      //TEMPLATE NEEDS TO BE FIXED FOR SONG NAME ETC
+      template += `
+      <div class="col-xs-3 stuff">
+          <h3>${song.artist}</h3>
+          <img height="100" width="100" src="${song.albumArt}"></img>
+          <div>Song title: ${song.title}</div>
+          <div>Album title: ${song.collection}</div>
+          <div>Price: ${song.price}</div>
+          <audio controls id="audio-box">
+              <source src="${song.preview}" type="audio/mp4">
+          </audio>
+      </div>
+      `
+    }
+    songElem.innerHTML = template
   }
 
-  //Start coding here
+    this.getMusicByArtist= function(){
+    service.getMusicByArtist(drawSongs)
+  }
 
 
 

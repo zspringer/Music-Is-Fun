@@ -1,0 +1,22 @@
+.song-list{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.stuff{
+    border: solid 2px #18587a;
+    background-color: #fc624d;
+    box-shadow: 10px 10px 5px #888888;
+    margin: 5px;
+}
+
+#audio-box{
+    background-color: black;
+    width: 100%;
+}
+
+h3{
+    font-size: 20px;
+}

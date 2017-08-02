@@ -14,7 +14,8 @@ function ItunesService(){
       return $.getJSON(apiUrl).then(function(response){
         var songList = response.results.map(function (song) {
                   return {
-                      title: song.trackName,
+                    //make a change here to designate a song or a movie  
+                    title: song.trackName,
                       albumArt: song.artworkUrl60,
                       artist: song.artistName,
                       collection: song.collectionName,
