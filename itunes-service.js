@@ -4,7 +4,7 @@ function ItunesService(){
 
       //allows requests to localhost: 8080 otherwise blocked by itunes
       var url = '//bcw-getter.herokuapp.com/?url=';
-      var url2 = 'https://itunes.apple.com/search?term=' + artist;
+      var url2 = 'https://itunes.apple.com/search?media=music&term=' + artist;
       var apiUrl = url + encodeURIComponent(url2);
       
       //changes the button to loading while songs load
@@ -15,7 +15,7 @@ function ItunesService(){
         var songList = response.results.map(function (song) {
                   return {
                     //make a change here to designate a song or a movie  
-                    title: song.trackName,
+                      title: song.trackName,
                       albumArt: song.artworkUrl60,
                       artist: song.artistName,
                       collection: song.collectionName,
@@ -28,4 +28,5 @@ function ItunesService(){
         return songList;
       })
     }
+
 }
