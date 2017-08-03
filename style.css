@@ -1,15 +1,24 @@
 .song-list{
     display: flex;
-    align-content: center;
+    /* align-content: space-around;
     justify-content: center;
-    flex-wrap: wrap;
+    flex-wrap: wrap; */
+}
+
+.img{
+    margin: 0 auto;
 }
 
 .stuff{
-    border: solid 2px #18587a;
+    border: solid 3px #18587a;
+    border-radius: 10%;
     background-color: #fc624d;
     box-shadow: 10px 10px 5px #888888;
-    margin: 5px;
+    margin: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    height: 350px;
+    width: 350px;
 }
 
 #audio-box{

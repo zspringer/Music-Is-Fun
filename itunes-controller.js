@@ -19,7 +19,7 @@ function ItunesController(){
       template += `
       <div class="col-xs-3 stuff">
           <h3>${song.artist}</h3>
-          <img height="100" width="100" src="${song.albumArt}"></img>
+          <img height="100" width="100" class="img-responsive" style="margin:0 auto;" src="${song.albumArt}"></img>
           <div>Song title: ${song.title}</div>
           <div>Album title: ${song.collection}</div>
           <div>Price: ${song.price}</div>
