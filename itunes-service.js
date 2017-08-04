@@ -13,14 +13,14 @@ function ItunesService(){
       //modifies the objects to reduce the excess data
       return $.getJSON(apiUrl).then(function(response){
         var songList = response.results.map(function (song) {
-                  return {
-                    //make a change here to designate a song or a movie  
+                  return { 
                       title: song.trackName,
                       albumArt: song.artworkUrl60,
                       artist: song.artistName,
                       collection: song.collectionName,
                       price: song.collectionPrice,
-                      preview: song.previewUrl
+                      preview: song.previewUrl,
+                      id: song.trackId
                     };
                 })
         //changes button back to GET MUSIC once songs are loaded
@@ -30,3 +30,4 @@ function ItunesService(){
     }
 
 }
+

@@ -8,11 +8,12 @@ function ItunesController(){
   }
 //need a draw, media tags for playbar, style for image, price artist
   //Start coding here
-  var itunesService = new ItunesService ()
 
   function drawSongs(songsList){
     var template = ''
     var songElem = document.getElementById('song-list')
+
+
 
     for (var i = 0; i < songsList.length; i++) {
       var song = songsList[i];
@@ -20,13 +21,13 @@ function ItunesController(){
       template += `
       <div class="col-xs-3 stuff">
           <h3>${song.artist}</h3>
-          <img height="100" width="100" class="img-responsive" style="margin:0 auto;" src="${song.albumArt}"></img>
-          <div onclick="${song.preview}">Song title: ${song.title}</div>
+          <img height="100px" width="100px" class="img-responsive" style="margin:0 auto;" src="${song.albumArt}"></img>
+          <div onclick="document.getElementById('${song.trackId}').play()">Song title: ${song.title}</div>
           <div>Album title: ${song.collection}</div>
           <div>Price: ${song.price}</div>
-          <audio controls id="audio-box">
+          <audio controls id="audio-box-${song.trackId}">
               <source src="${song.preview}" type="audio/mp4">
-          </audio>
+          </audio> 
       </div>
       `
     }
@@ -36,4 +37,12 @@ function ItunesController(){
     this.getMusicByArtist= function(){
     service.getMusicByArtist(drawSongs)
   }
+//   this.playSong = function playSong(id){
+//   var trackId = document.getElementById("song-title")
+//   function audio.play(trackId)
+// }
+//<div onclick="playSong(${song.id})">Song title: ${song.title}</div>
+{/* <audio controls id="audio-box-${song.trackId}">
+              <source src="${song.preview}" type="audio/mp4">
+          </audio> */}
 }

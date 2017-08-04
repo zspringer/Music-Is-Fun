@@ -9,11 +9,28 @@
     margin: 0 auto;
 }
 
+.header{
+    height: 100px;
+    padding-top: 50px;
+    font-family: 'Sedgwick Ave', cursive;
+}
+
+.song-section{
+    font-family: 'Caveat', cursive;
+}
+
+body{
+    background: url("http://images.huffingtonpost.com/2013-02-12-Weddle_Kirk_001_Nirvana_WEB.jpg") no-repeat center center fixed;
+    /*background: url("http://www.musiclipse.com/wp-content/uploads/2014/05/angus-young-background-hd-wallpaper.jpg") no-repeat center center fixed;*/
+    background-size: cover;
+    height: 100vh;
+}
+
 .stuff{
     border: solid 3px #18587a;
     border-radius: 10%;
     background-color: #fc624d;
-    box-shadow: 10px 10px 5px #888888;
+    box-shadow: 10px 10px 5px #363738;
     margin: 10px;
     padding-top: 5px;
     padding-bottom: 5px;
@@ -24,6 +41,10 @@
 #audio-box{
     background-color: black;
     width: 100%;
+}
+
+h1{
+    font-size: 100px;
 }
 
 h3{
