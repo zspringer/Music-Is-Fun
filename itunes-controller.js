@@ -37,12 +37,4 @@ function ItunesController(){
     this.getMusicByArtist= function(){
     service.getMusicByArtist(drawSongs)
   }
-//   this.playSong = function playSong(id){
-//   var trackId = document.getElementById("song-title")
-//   function audio.play(trackId)
-// }
-//<div onclick="playSong(${song.id})">Song title: ${song.title}</div>
-{/* <audio controls id="audio-box-${song.trackId}">
-              <source src="${song.preview}" type="audio/mp4">
-          </audio> */}
 }
